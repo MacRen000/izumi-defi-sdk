@@ -22,9 +22,9 @@ export class TokenERC20 extends AbstractCurrency {
      */
     public readonly address: string;
 
-    public constructor(props: TokenERC20Props) {
+    public constructor({ address, ...props }: TokenERC20Props) {
         super(props);
-        this.address = getValidatedAddress(props.address);
+        this.address = getValidatedAddress(address);
     }
 
     /**
