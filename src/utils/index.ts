@@ -1,0 +1,1 @@
+export { getValidatedAddress } from './getValidatedAddress';
